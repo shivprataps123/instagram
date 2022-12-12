@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/344/instagram-new--v1.png">
+    <link rel="stylesheet" href="../styles/main.css"/>
+    <style>
+       #up{
+        display: flex;
+        margin-top: 80px;
+        justify-content: space-around;
+        align-items: center;
+       }
+       #up>div{
+        height:200px;
+        border:px solid red;
+        width:25%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+       }
+       #post{
+        text-align: center;
+       }
+       #id,#caption,#image,#create_btn{
+        margin-left: 44px;
+        height:30px;
+        width:70%;
+        margin-top: 10px;
+        border-radius: 5px;
+        font-size: 17px;
+       }
+       #upd{
+        text-align: center;
+       }
+       #update_id,#new_caption,#update_btn{
+        border-radius: 5px;
+        font-size: 17px;
+        margin-left: 45px;
+        height:30px;
+        width:70%;
+        margin-top: 10px;
+      
+       }
+       #del{
+        text-align: center;
+       }
+       #delete_id,#delete_btn{
+        border-radius: 5px;
+        font-size: 17px;
+        margin-left: 45px;
+        height:30px;
+        width:70%;
+        margin-top: 10px;
+       
+       }
+       #update_btn{
+        background-color: red;
+        color:white;
+        border:none;
+       }
+       #delete_btn{
+      background-color:black;
+        color:white;
+       }
+     #create_btn{
+       background-color:  rgb(255, 0, 128);
+       color:white
+     }
+     #submit_btn{
+      margin-left: 44px;
+      height:30px;
+      font-size: 16px;
+      width:70%;
+      background-color:  rgb(255, 0, 128);
+      border-radius: 5px;
+      color:white;
+      border:none;
+     }
+    </style>
+</head>
+<body>
+    <div class="navbar" id="navbar"></div>
+
+    <div id="up">
+        <div>
+        <h2 id="post">Add Post</h2>
+        <input type="text" placeholder="Put Your Id" id="id"><br>
+        <input type="text" placeholder="Caption" id="caption"><br>
+        <input type="file" id="image" accept="image/*"/><br>
+      <button id="submit_btn">Create Post</button>
+    </div>
+    <div>
+        <h2 id="upd">Update Caption</h2>
+        <input type="text" id="update_id" placeholder="Enter post id for update"><br>
+        <input type="text" id="new_caption" placeholder="new caption"><br>
+        <button id="update_btn">Update Post</button>
+      </div>
+    <div>
+      <h2 id="del">Delete Post</h2>
+      <input type="text" id="delete_id" placeholder="Enter post id for delete"><br>
+      <button id="delete_btn">Delete Post</button>
+    </div>
+   
+    </div> 
+</body>
+</html>
+<script type="module" src="create.js"></script>
